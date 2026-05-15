@@ -22,6 +22,7 @@ public:
     float &operator()(std::size_t i, std::size_t j);
 
     friend std::ostream &operator<<(std::ostream &os , const Tensor &obj);
-    std::shared_ptr<Tensor>operator+(std::shared_ptr<Tensor>other);
 
+    std::shared_ptr<Tensor>operator+(std::shared_ptr<Tensor>other);
+    std::shared_ptr<Tensor>operator*(std::shared_ptr<Tensor>other);
 };

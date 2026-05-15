@@ -177,4 +177,95 @@ std::ostream &operator<<(std::ostream &os, const Tensor &obj)
     return os;
 }
 
+std::shared_ptr<Tensor> Tensor::operator+(std::shared_ptr<Tensor>other)
+{
+    //scalar + scalar
+    if(_shape.size() == 0 && other->shape().size() == 0){
+    float result = item() + other->item();
+    return std::make_shared<Tensor>(result);
+    }
+
+    //scalar + 1D
+    if(_shape.size() == 0 && other->shape().size() == 1){
+        std::vector<float>result;
+        for(std::size_t i=0;i<other->shape()[0];i++){
+            result.push_back(item()+((*other)(i)));
+        }
+
+        return std::make_shared<Tensor>(result);
+    }
+    
+    //scalar + 2D
+
+    if(_shape.size() == 0 && other->shape().size() == 2){
+        std::vector<std::vector<float>> result;
+        for(std::size_t i =0; i < other->shape()[0];i++){
+            std::vector<float>result_i;
+            for(std::size_t j=0;j< other->shape()[1];j++){
+                result_i.push_back(item() + (*other)(i,j));
+            }
+            result.push_back(result_i);
+        }
+        return std::make_shared<Tensor>(result);
+    }
+
+    //1D + scalar 
+
+    if(_shape.size() == 1 && other->shape().size() == 0){
+        std::vector<float>result;
+        for(std::size_t i=0;i< shape()[0]; i++){
+            result.push_back(operator()(i) + other->item());
+        }
+        return std::make_shared<Tensor>(result);
+    }
+
+    //2D + scalar
+
+    if(_shape.size() == 2 && other->shape().size() == 0){
+        std::vector<std::vector<float>> result;
+        for(std:: size_t i=0;i<other->shape()[0];i++)
+        {
+            std::vector<float>result_i;
+            for(std::size_t j=0;j<other->shape()[1];j++)
+            {
+                    result_i.push_back(item()+(*other)(i,j));
+            }
+            result.push_back(result_i);
+        }
+        return std::make_shared<Tensor>(result);
+    }
+
+    //1D + 1D
+
+    if(_shape[0] != other->shape().size()){
+        throw std::invalid_argument("Dimention is not equal");
+    }
+
+    if(_shape.size() == 1){
+        std::vector<float>result;
+        for(std::size_t i=0; i < shape()[0] ;i++){
+            result.push_back(operator()(i)+(*other)(i));
+        }
+    return std::make_shared<Tensor>(result);
+    }
+
+    //2D + 2D
+    else{
+        if(shape()[1] != other->shape()[1]){
+            throw std::invalid_argument("Second Dimention is not equal");
+        }
+        
+        std::vector<std::vector<float>> result;
+        for(std::size_t i=0; i < shape()[0]; i++){
+            std::vector<float>result_i;
+            for(std::size_t j=0; j < shape()[1]; j++){
+                result_i.push_back(operator()(i,j)+(*other)(i,j));
+            }
+            result.push_back(result_i);
+        }
+       return std::make_shared<Tensor>(result);
+    }
+}
+
+
 
