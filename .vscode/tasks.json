@@ -1,0 +1,51 @@
+{
+    "tasks": [
+        {
+            "label": "CMake: build (Debug)",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build",
+                "--config",
+                "Debug",
+                "--target",
+                "ml_app"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "cmake --build build --config Debug --target ml_app"
+        },
+        {
+            "label": "CMake: configure",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-S",
+                "${workspaceFolder}",
+                "-B",
+                "${workspaceFolder}/build",
+                "-G",
+                "Visual Studio 18 2026",
+                "-A",
+                "x64"
+            ],
+            "detail": "cmake -S . -B build -G \"Visual Studio 18 2026\" -A x64"
+        },
+        {
+            "label": "CMake: build all (Debug)",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build",
+                "--config",
+                "Debug"
+            ],
+            "detail": "cmake --build build --config Debug"
+        }
+    ],
+    "version": "2.0.0"
+}

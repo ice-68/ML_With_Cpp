@@ -1,0 +1,19 @@
+Start testing: May 15 19:37 中国标准时间
+----------------------------------------------------------
+Unable to find executable: run_tests_NOT_BUILT
+1/1 Testing: run_tests_NOT_BUILT
+1/1 Test: run_tests_NOT_BUILT
+Command: ""
+Directory: C:/Users/28439/Desktop/Project_02/build
+"run_tests_NOT_BUILT" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"run_tests_NOT_BUILT" end time: May 15 19:37 中国标准时间
+"run_tests_NOT_BUILT" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 15 19:37 中国标准时间

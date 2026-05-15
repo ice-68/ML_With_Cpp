@@ -1,0 +1,10 @@
+^C:\USERS\28439\DESKTOP\PROJECT_02\BUILD\CMAKEFILES\0FD606F239537AA8570C287DF41AA91E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/28439/Desktop/Project_02 -BC:/Users/28439/Desktop/Project_02/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/28439/Desktop/Project_02/build/SimpleNeuralNetwork.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

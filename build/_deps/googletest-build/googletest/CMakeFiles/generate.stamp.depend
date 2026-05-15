@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake
+C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/FindPython/Support.cmake
+C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/FindPython3.cmake
+C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/28439/Desktop/Project_02/build/_deps/googletest-src/googletest/CMakeLists.txt
+C:/Users/28439/Desktop/Project_02/build/_deps/googletest-src/googletest/cmake/Config.cmake.in
+C:/Users/28439/Desktop/Project_02/build/_deps/googletest-src/googletest/cmake/gtest.pc.in
+C:/Users/28439/Desktop/Project_02/build/_deps/googletest-src/googletest/cmake/gtest_main.pc.in
+C:/Users/28439/Desktop/Project_02/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake
