@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "MinSizeRel/unit_tests.exe"
+			"path" : "Release/unit_tests.exe"
 		},
 		{
-			"path" : "MinSizeRel/unit_tests.pdb"
+			"path" : "Release/unit_tests.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 39,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 40,
+				"line" : 39,
 				"parent" : 0
 			}
 		]
@@ -65,7 +65,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /O1 /Ob1 /DNDEBUG -std:c++20 -MD"
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD"
 				}
 			],
 			"includes" : 
@@ -124,7 +124,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /O1 /Ob1 /DNDEBUG -MD",
+				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD",
 				"role" : "flags"
 			},
 			{
@@ -137,22 +137,22 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "MinSizeRel\\ml_core.lib",
+				"fragment" : "Release\\ml_core.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\MinSizeRel\\gtest.lib",
+				"fragment" : "lib\\Release\\gtest.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\MinSizeRel\\gtest_main.lib",
+				"fragment" : "lib\\Release\\gtest_main.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\MinSizeRel\\gtest.lib",
+				"fragment" : "lib\\Release\\gtest.lib",
 				"role" : "libraries"
 			},
 			{
