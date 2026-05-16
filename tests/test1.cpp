@@ -66,3 +66,5 @@ TEST(TensorTest, OutOfBounds2D) {
     EXPECT_THROW(t(0, 5), std::invalid_argument);
     EXPECT_THROW(t(5, 0), std::invalid_argument);
 }
+//cd C:\Users\28439\Desktop\Project_02
+//cmake --build build --config Debug --target unit_tests.\build\Debug\unit_tests.exe
